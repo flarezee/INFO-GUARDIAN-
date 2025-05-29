@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INFO GUARDIAN - Guardians of Tech Excellence</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-container">
+            <div class="network-animation">
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+                <div class="node"></div>
+            </div>
+            <div class="loading-text">
+                <h2>LOADING TECH INTELLIGENCE...</h2>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Welcome Popup -->
+    <div id="welcome-popup">
+        <div class="popup-content">
+            <div class="guardian-logo">
+                <i class="fas fa-shield-alt"></i>
+            </div>
+            <h1>WELCOME TO THE GUARDIANS OF INFO'S TECH TO GREATNESS</h1>
+            <div class="mystic-particles"></div>
+        </div>
+    </div>
+
+    <!-- Did You Know Popup -->
+    <div id="did-you-know-popup" class="hidden">
+        <div class="dyk-content">
+            <button class="close-btn">&times;</button>
+            <h3><i class="fas fa-lightbulb"></i> Did You Know?</h3>
+            <p id="dyk-text">The first computer bug was an actual bug - a moth trapped in a Harvard Mark II computer in 1947!</p>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <div id="main-website">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>INFO GUARDIAN</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#news" class="nav-link">Latest News</a></li>
+                    <li><a href="#quiz" class="nav-link">Tech Quiz</a></li>
+                    <li><a href="#comparison" class="nav-link">Gadget Compare</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">GUARDIANS OF TECH INTELLIGENCE</h1>
+                <p class="hero-subtitle">Unveiling the mysteries of tomorrow's technology today</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Tech Monitoring</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Daily Updates</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">∞</span>
+                        <span class="stat-label">Innovation</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="tech-grid"></div>
+            </div>
+        </section>
+
+        <!-- Latest News Section -->
+        <section id="news" class="news-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-newspaper"></i>
+                    LATEST TECH INTELLIGENCE
+                </h2>
+                <div class="news-grid">
+                    <article class="news-card featured">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/400x250/1a1a2e/eee?text=iPhone+15+Pro" alt="iPhone 15 Pro">
+                            <div class="news-badge">BREAKING</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>iPhone 15 Pro Max: Titanium Revolution</h3>
+                            <p>Apple's latest flagship brings aerospace-grade titanium construction, advanced A17 Pro chip, and revolutionary camera system that redefines mobile photography.</p>
+                            <div class="news-meta">
+                                <span><i class="fas fa-clock"></i> 2 hours ago</span>
+                                <span><i class="fas fa-eye"></i> 15.2K views</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/350x200/16213e/eee?text=Samsung+Galaxy" alt="Samsung Galaxy">
+                        </div>
+                        <div class="news-content">
+                            <h3>Samsung Galaxy S24 Ultra Leaked Specs</h3>
+                            <p>200MP camera, S Pen integration, and AI-powered features set to challenge iPhone dominance.</p>
+                            <div class="news-meta">
+                                <span><i class="fas fa-clock"></i> 4 hours ago</span>
+                                <span><i class="fas fa-eye"></i> 8.7K views</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/350x200/0f4c75/eee?text=AI+Breakthrough" alt="AI Technology">
+                        </div>
+                        <div class="news-content">
+                            <h3>OpenAI GPT-5: The Next Frontier</h3>
+                            <p>Revolutionary AI model promises human-level reasoning and unprecedented problem-solving capabilities.</p>
+                            <div class="news-meta">
+                                <span><i class="fas fa-clock"></i> 6 hours ago</span>
+                                <span><i class="fas fa-eye"></i> 12.1K views</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="news-card">
+                        <div class="news-image">
+                            <img src="https://via.placeholder.com/350x200/2c3e50/eee?text=Neural+Tech" alt="Neural Technology">
+                        </div>
+                        <div class="news-content">
+                            <h3>Neuralink Brain Chip: Human Trials Begin</h3>
+                            <p>First human patients receive brain-computer interface implants, marking new era in neurotechnology.</p>
+                            <div class="news-meta">
+                                <span><i class="fas fa-clock"></i> 8 hours ago</span>
+                                <span><i class="fas fa-eye"></i> 9.3K views</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz" class="quiz-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-brain"></i>
+                    TECHY-WIZARD CHALLENGE
+                </h2>
+                <div class="quiz-container">
+                    <div class="quiz-header">
+                        <h3>Compete to become the Techy-Wizard of the Week!</h3>
+                        <div class="quiz-stats">
+                            <div class="stat">
+                                <span class="stat-number">Question 1</span>
+                                <span class="stat-label">of 10</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Score</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="quiz-question">
+                        <h4>Which company developed the first smartphone with a touchscreen?</h4>
+                        <div class="quiz-options">
+                            <label class="option">
+                                <input type="radio" name="q1" value="a">
+                                <span class="option-text">A) Apple</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q1" value="b">
+                                <span class="option-text">B) IBM</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q1" value="c">
+                                <span class="option-text">C) Samsung</span>
+                            </label>
+                            <label class="option">
+                                <input type="radio" name="q1" value="d">
+                                <span class="option-text">D) Nokia</span>
+                            </label>
+                        </div>
+                        <button class="quiz-btn">Next Question</button>
+                    </div>
+
+                    <div class="leaderboard">
+                        <h4><i class="fas fa-trophy"></i> This Week's Wizards</h4>
+                        <div class="leader-list">
+                            <div class="leader-item">
+                                <span class="rank">1</span>
+                                <span class="name">TechMaster_2024</span>
+                                <span class="score">9500 pts</span>
+                            </div>
+                            <div class="leader-item">
+                                <span class="rank">2</span>
+                                <span class="name">CodeNinja_Pro</span>
+                                <span class="score">9200 pts</span>
+                            </div>
+                            <div class="leader-item">
+                                <span class="rank">3</span>
+                                <span class="name">ByteGuardian</span>
+                                <span class="score">8950 pts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gadget Comparison Section -->
+        <section id="comparison" class="comparison-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-balance-scale"></i>
+                    GADGET BATTLEGROUND
+                </h2>
+                <div class="comparison-container">
+                    <div class="comparison-selector">
+                        <div class="selector-group">
+                            <label>Select First Device:</label>
+                            <select id="device1">
+                                <option value="iphone15">iPhone 15 Pro Max</option>
+                                <option value="galaxy-s23">Galaxy S23 Ultra</option>
+                                <option value="pixel8">Pixel 8 Pro</option>
+                            </select>
+                        </div>
+                        <div class="vs-indicator">VS</div>
+                        <div class="selector-group">
+                            <label>Select Second Device:</label>
+                            <select id="device2">
+                                <option value="galaxy-s23">Galaxy S23 Ultra</option>
+                                <option value="iphone15">iPhone 15 Pro Max</option>
+                                <option value="pixel8">Pixel 8 Pro</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="comparison-grid">
+                        <div class="device-card">
+                            <div class="device-header">
+                                <img src="https://via.placeholder.com/200x250/1a1a2e/eee?text=iPhone+15" alt="iPhone 15 Pro Max">
+                                <h3>iPhone 15 Pro Max</h3>
+                                <p class="price">$1,199</p>
+                            </div>
+                            <div class="device-specs">
+                                <div class="spec-row">
+                                    <span class="spec-label">Display:</span>
+                                    <span class="spec-value">6.7" Super Retina XDR</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-label">Processor:</span>
+                                    <span class="spec-value">A17 Pro Bionic</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-label">Camera:</span>
+                                    <span class="spec-value">48MP Triple System</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-label">Battery:</span>
+                                    <span class="spec-value">4441 mAh</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-label">Storage:</span>
+                                    <span class="spec-value">256GB - 1TB</span>
+                                </div>
+                            </div>
+                            <div class="device-score">
+                                <div class="score-circle">
+                                    <span class="score">9.2</span>
+                                    <span class="score-label">/10</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="device-card">
+                            <div class="device-header">
+                                <img src="https://via.placeholder.com/200x250/16213e/eee?text=Galaxy+S23" alt="Galaxy S23 Ultra">
+                                <h3>Galaxy S23 Ultra</h3>
+                                <p class="price">$1,199</p>
+                            </div>
+                            <div class="device-specs">
+                                <div class="spec-row">
+                                    <span class="spec-label">Display:</span>
+                                    <span class="spec-value">6.8" Dynamic AMOLED</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-label">Processor:</span>
+                                    <span class="spec-value">Snapdragon 8 Gen 2</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-label">Camera:</span>
+                                    <span class="spec-value">200MP Quad System</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-label">Battery:</span>
+                                    <span class="spec-value">5000 mAh</span>
+                                </div>
+                                <div class="spec-row">
+                                    <span class="spec-label">Storage:</span>
+                                    <span class="spec-value">256GB - 1TB</span>
+                                </div>
+                            </div>
+                            <div class="device-score">
+                                <div class="score-circle">
+                                    <span class="score">9.0</span>
+                                    <span class="score-label">/10</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <i class="fas fa-satellite-dish"></i>
+                    GUARDIAN COMMUNICATIONS
+                </h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Connect with the Guardians</h3>
+                        <p>Join our network of tech intelligence and stay ahead of the curve.</p>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>Tech Hotline</h4>
+                                <p>08074542303</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email Guardian</h4>
+                                <p>contact@infoguardian.tech</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Guardian HQ</h4>
+                                <p>Cyber Security District, Tech Valley</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <h3>Send Intel</h3>
+                        <div class="form-group">
+                            <input type="text" placeholder="Agent Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Secure Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Mission Type</option>
+                                <option value="tip">Tech Tip</option>
+                                <option value="leak">Exclusive Leak</option>
+                                <option value="review">Product Review</option>
+                                <option value="collaboration">Collaboration</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Classified Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Transmit Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>INFO GUARDIAN</span>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#privacy">Privacy Shield</a>
+                        <a href="#terms">Guardian Code</a>
+                        <a href="#about">About Guardians</a>
+                    </div>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 INFO GUARDIAN. All rights reserved.</p>
+                    <p>Made by <strong>FlamyDee. Ike Favour</strong></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
